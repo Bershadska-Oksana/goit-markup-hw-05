@@ -574,7 +574,7 @@ input::placeholder {
 .label {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04 em;
   color: #8e8f99;
 }
@@ -588,13 +588,16 @@ input::placeholder {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
-  border: 1px solid #fff;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   fill: transparent;
   cursor: pointer;
   margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input {
   padding-left: 24px;
@@ -619,6 +622,7 @@ input:focus {
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #4d5ae5;
 }
 .info-input {
   width: 100%;
@@ -645,6 +649,7 @@ input:focus {
 }
 .input-btn {
   position: relative;
+  margin-bottom: 24px;
 }
 .info {
   display: block;
@@ -671,6 +676,7 @@ input:focus {
   margin-left: 16px;
   fill: #ffffff;
 }
+
 .comment {
   border: 1px solid rgba(46, 47, 66, 0.4);
   font-size: 12px;
@@ -685,6 +691,7 @@ input:focus {
   resize: none;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: #4d5ae5;
 }
 .comment:focus {
   border-color: #4d5ae5;
