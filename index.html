@@ -484,6 +484,7 @@
         </div>
       </div>
     </footer>
+    <!-- ======= Modal window ======== -->
     <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-close-btn">
@@ -491,6 +492,46 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <div class="checkbox-field">
+          <input
+            class="checkbox visually-hidden"
+            type="checkbox"
+            name="privacy"
+            id="privacy"
+            value="true"
+          />
+          <form class="form-input">
+            <p class="what-is-about">
+              Leave your contacts and we will call you back
+            </p>
+            <label class="info" for="first-name">Name</label>
+            <input class="info-input" id="first-name" type="text" />
+            <label class="info" for="phone">Phone</label>
+            <input class="info-input" id="phone" type="text" />
+            <label class="info" for="email">Email</label>
+            <input class="info-input" id="email" type="text" />
+            <label class="info" for="user-comment">Comment</label>
+            <textarea
+              class="comment"
+              name="user-comment"
+              id="user-comment"
+              cols="30"
+              rows="10"
+              placeholder="Text input"
+            ></textarea>
+
+            <button type="submit" class="form-btn">Send</button>
+          </form>
+          <label class="label" for="privacy">
+            <span class="custom-checkbox">
+              <svg class="custom-checkbox-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-Vector"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a class="privacy-link" href="">Privacy Policy</a></label
+          >
+        </div>
       </div>
     </div>
   </body>
