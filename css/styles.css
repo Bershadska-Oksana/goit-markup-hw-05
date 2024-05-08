@@ -483,6 +483,9 @@ input::placeholder {
   cursor: pointer;
   border: none;
 }
+.subscribe-container {
+  margin-left: 75px;
+}
 /* ======== Modal window ========= */
 
 .backdrop {
@@ -634,6 +637,7 @@ input::placeholder {
 }
 .subscribe-telegram {
   margin-left: 16px;
+  fill: #ffffff;
 }
 .comment {
   border: 1px solid rgba(46, 47, 66, 0.4);
