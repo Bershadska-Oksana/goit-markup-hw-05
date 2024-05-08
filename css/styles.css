@@ -430,17 +430,34 @@ p {
   display: flex;
   column-gap: 8px;
 }
+.subscribe-label {
+  gap: 24px;
+}
+.subscribe {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
 .subscribe-form-input {
   border: 1px solid #fff;
   border-radius: 4px;
   width: 264px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
 
   color: #ffffff;
   background-color: transparent;
-  padding-left: 24px;
+  padding-left: 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+input::placeholder {
+  color: #ffffff;
 }
 .subscribe-form-input::placeholder {
   font-size: 18px;
@@ -448,6 +465,9 @@ p {
   color: rgba(255, 255, 255, 0.3);
 }
 .subscribe-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -456,9 +476,11 @@ p {
   color: #fff;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
   height: 40px;
-  background: #4d5ae5;
+  background-color: #4d5ae5;
+  min-width: 165px;
+  cursor: pointer;
+  border: none;
 }
 /* ======== Modal window ========= */
 
@@ -607,6 +629,9 @@ p {
   text-align: center;
   color: #2e2f42;
   margin-top: 70px;
+}
+.subscribe-telegram {
+  margin-left: 16px;
 }
 .comment {
   border: 1px solid rgba(46, 47, 66, 0.4);
