@@ -429,6 +429,7 @@ p {
 .subscribe-form {
   display: flex;
   column-gap: 8px;
+  gap: 24px;
 }
 .subscribe-label {
   gap: 24px;
@@ -503,6 +504,7 @@ input::placeholder {
   pointer-events: auto;
 }
 .modal {
+  padding: 72px 24px 24px 24px;
   position: absolute;
   top: 50%;
   left: 50%;
