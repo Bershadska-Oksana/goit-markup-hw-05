@@ -624,8 +624,10 @@ form {
 }
 
 .info-input:focus + .checkbox-svg {
-  fill: #4d5ae5;
   border-color: #4d5ae5;
+}
+.info-input:focus + .checkbox-svg {
+  fill: #4d5ae5;
 }
 .checkbox-svg {
   position: absolute;
