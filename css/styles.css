@@ -575,8 +575,8 @@ input::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.04 em;
   color: #8e8f99;
+  letter-spacing: 0.04em;
 }
 .privacy-link {
   line-height: 1.33333;
@@ -598,6 +598,8 @@ input::placeholder {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #404bbf;
+  fill: #f4f4fd;
 }
 .form-input {
   padding-left: 24px;
@@ -635,17 +637,22 @@ input:focus {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-btn {
-  border-radius: 4px;
-  padding: 16px 32px;
-  width: 169px;
-  height: 56px;
+  display: block;
   color: #ffffff;
   border-radius: 4px;
   padding: 16px 32px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-btn {
   position: relative;
@@ -678,7 +685,6 @@ input:focus {
 }
 
 .comment {
-  border: 1px solid rgba(46, 47, 66, 0.4);
   font-size: 12px;
   border-radius: 4px;
   height: 120px;
@@ -692,6 +698,7 @@ input:focus {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-color: #4d5ae5;
+  border: 1px solid rgba(46, 47, 66, 0.4);
 }
 .comment:focus {
   border-color: #4d5ae5;
