@@ -38,6 +38,9 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+div {
+  display: block;
+}
 /* ======== HEADER  STYLES ======== */
 
 .nav-page {
@@ -264,6 +267,7 @@ p {
   display: flex;
   justify-content: center;
   gap: 24px;
+  margin-top: 8px;
 }
 .team-name {
   text-align: center;
@@ -422,6 +426,7 @@ p {
   align-items: center;
   justify-content: center;
   line-height: 0;
+  fill: #f4f4fd;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-link:hover,
@@ -435,8 +440,6 @@ p {
   display: flex;
   column-gap: 8px;
   gap: 24px;
-}
-.subscribe-label {
   gap: 24px;
 }
 .subscribe {
@@ -447,6 +450,7 @@ p {
   letter-spacing: 0.02em;
   color: #ffffff;
 }
+
 .subscribe-form-input {
   border: 1px solid #fff;
   border-radius: 4px;
@@ -538,6 +542,7 @@ input::placeholder {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #e7e9fc;
   display: flex;
+  line-height: 0;
   justify-content: center;
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -602,12 +607,16 @@ input::placeholder {
   fill: #f4f4fd;
   fill: transparent;
 }
-.form-input {
+form {
+  display: block;
+  margin-top: 0em;
+  unicode-bidi: isolate;
+}
+form-input {
   padding-left: 24px;
   padding-right: 24px;
   margin-left: auto;
   margin-right: auto;
-
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -651,8 +660,11 @@ input:focus {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  text-align: center;
   cursor: pointer;
   border: none;
+  margin-top: 24px;
+  margin-left: 120px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-btn {
@@ -666,9 +678,6 @@ input:focus {
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
-  border-radius: 4px;
-  width: 360px;
-  height: 40px;
 }
 .what-is-about {
   font-weight: 500;
@@ -677,7 +686,6 @@ input:focus {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-top: 70px;
   margin-bottom: 16px;
 }
 .subscribe-telegram {
