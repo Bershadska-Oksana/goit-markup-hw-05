@@ -623,7 +623,7 @@ form {
   unicode-bidi: isolate;
 }
 
-.info-input:focus + .checkbox-svg {
+.info-input:focus {
   border-color: #4d5ae5;
 }
 .info-input:focus + .checkbox-svg {
